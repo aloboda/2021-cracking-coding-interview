@@ -11,14 +11,13 @@ public class PalindromePermutationChecker {
 			}
 		}
 		boolean oneOddUsed = false;
-		for (int i = 0; i < charToOdd.length; i++) {
-			if (charToOdd[i]) {
+		for (boolean isOdd : charToOdd) {
+			if (isOdd) {
 				if (oneOddUsed) {
 					return false;
 				} else {
 					oneOddUsed = true;
 				}
-
 			}
 		}
 		return true;

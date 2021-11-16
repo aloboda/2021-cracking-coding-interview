@@ -1,6 +1,6 @@
 package com.loboda.interview.strings;
 
-public class IsPermutationChecker {
+public class PermutationChecker {
 	public static boolean isPermutation(String str1, String str2) {
 		if (str1.length() != str2.length()){
 			return false;
